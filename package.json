@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
+    "postbuild": "printf 'hydropower.productivity.ee\n' > docs/CNAME && touch docs/.nojekyll",
     "preview": "astro preview",
     "astro": "astro"
   },
