@@ -1,11 +1,413 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout
+	title="Hydropower OU | Hüdraulika ja pneumaatika"
+	description="Komponentide müük, hüdraulika- ja pneumaatikasüsteemide koostamine, paigaldus ja nõustamine."
+>
+	<header class="topbar">
+		<div class="container topbar-inner">
+			<a class="brand" href="#avaleht" aria-label="Hydropower OU avaleht">
+				<img class="brand-logo" src="/logo-hydropower.png" alt="Hydropower OU logo" />
+			</a>
+			<nav class="menu" aria-label="Pohimenüü">
+				<a href="#teenused">Teenused</a>
+				<a href="#partnerid">Partnerid</a>
+				<a href="#kontakt">Kontakt</a>
+			</nav>
+			<a class="btn btn-outline" href="tel:+3727344430">+372 734 4430</a>
+		</div>
+	</header>
+
+	<main id="avaleht">
+		<section class="hero section">
+			<div class="container hero-grid">
+				<div class="hero-copy">
+					<p class="eyebrow">Hüdraulika ja pneumaatika ekspert Eestis</p>
+					<h1>Usaldusväärsed süsteemid, mis peavad vastu igas tootmiskeskkonnas</h1>
+					<p>
+						Pakume hüdraulika ja pneumaatika komponentide müüki, süsteemide koostamist ja paigaldust
+						ning tehnilist nõustamist. Toetame ettevõtteid ideest hoolduseni.
+					</p>
+					<div class="hero-actions">
+						<a class="btn btn-primary" href="#kontakt">Küsi pakkumist</a>
+						<a class="btn btn-light" href="#teenused">Vaata teenuseid</a>
+					</div>
+				</div>
+				<div class="hero-panel card">
+					<p class="panel-title">Pohitegevused</p>
+					<ul>
+						<li>Komponentide müük</li>
+						<li>Hüdraulika- ja pneumaatikasüsteemide koostamine</li>
+						<li>Süsteemide paigaldus ja seadistus</li>
+						<li>Hüdraulika ja pneumaatika tarvikud</li>
+						<li>Nõustamine ja hooldussoovitused</li>
+					</ul>
+					<a class="panel-link" href="#kontakt">Räägime sinu projektist</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="teenused" class="section services">
+			<div class="container">
+				<h2 class="section-title">Teenused</h2>
+				<p class="section-lead">
+					Koostame ja tarnime lahendusi tööstusele, ehitusele ja põllumajandusele. Töö keskmes on
+					kindel kvaliteet, kiire reageerimine ja praktiline insenertehniline tugi.
+				</p>
+				<div class="service-grid">
+					<article class="card service-card">
+						<h3>Komponentide müük</h3>
+						<p>Hüdraulika- ja pneumaatikakomponendid usaldusväärsetelt tootjatelt.</p>
+					</article>
+					<article class="card service-card">
+						<h3>Süsteemide koostamine</h3>
+						<p>Projeteerime ja komplekteerime toimivad süsteemid vastavalt reaalsele kasutusele.</p>
+					</article>
+					<article class="card service-card">
+						<h3>Paigaldus kohapeal</h3>
+						<p>Teostame paigalduse, häälestuse ja käivituse, et tööprotsess jätkuks sujuvalt.</p>
+					</article>
+					<article class="card service-card">
+						<h3>Tarvikud ja lisad</h3>
+						<p>Lai valik voolikuid, liitmikke, filtreid, tihendeid ja teisi vajalikke tarvikuid.</p>
+					</article>
+					<article class="card service-card">
+						<h3>Tehniline nõustamine</h3>
+						<p>Aitame valida õige lahenduse ja ennetada seisakuid enne nende tekkimist.</p>
+					</article>
+					<article class="card service-card service-highlight">
+						<h3>Teenindus</h3>
+						<p>Toetame süsteemide töökindlust hooldussoovituste ja praktilise kogemusega.</p>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="partnerid" class="section partners">
+			<div class="container">
+				<div class="partners-wrap card">
+					<div>
+						<h2 class="section-title">Partnerid</h2>
+						<p class="section-lead">
+							Hydropower OU on HYDAC ja NORDHYRAULIC lahenduste maaletooja ning hulgimüügi partner.
+						</p>
+					</div>
+					<div class="partner-list">
+						<a href="http://www.hydac.com/" target="_blank" rel="noreferrer">HYDAC</a>
+						<a href="http://www.nordhydraulic.se/" target="_blank" rel="noreferrer">NORDHYRAULIC</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="kontakt" class="section contact">
+			<div class="container contact-grid">
+				<div>
+					<h2 class="section-title">Võta ühendust</h2>
+					<p class="section-lead">
+						Räägi meile oma vajadusest ja leiame sobiva hüdraulika- või pneumaatikalahenduse.
+					</p>
+					<p class="contact-line"><strong>Telefon:</strong> <a href="tel:+3727344430">+372 734 4430</a></p>
+					<p class="contact-line"><strong>Telefaks:</strong> +372 734 4158</p>
+					<p class="contact-line"><strong>E-post:</strong> <a href="mailto:info@hydropower.ee">info@hydropower.ee</a></p>
+				</div>
+				<div class="card cta-card">
+					<h3>Kiire päring</h3>
+					<p>Kirjuta meile ja vastame esimesel võimalusel.</p>
+					<a class="btn btn-primary" href="mailto:info@hydropower.ee?subject=P%C3%A4ring%20Hydropower%20OU-le"
+						>Saada e-kiri</a
+					>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container footer-inner">
+			<p>© {new Date().getFullYear()} Hydropower OU</p>
+			<p>Hüdraulika ja pneumaatika lahendused Eestis</p>
+		</div>
+	</footer>
 </Layout>
+
+<style>
+	.topbar {
+		position: sticky;
+		top: 0;
+		z-index: 10;
+		background: rgba(244, 248, 251, 0.86);
+		backdrop-filter: blur(10px);
+		border-bottom: 1px solid var(--border);
+	}
+
+	.topbar-inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1rem;
+		padding: 0.85rem 0;
+	}
+
+	.brand {
+		display: inline-flex;
+		align-items: center;
+		line-height: 0;
+	}
+
+	.brand-logo {
+		height: 2.2rem;
+		width: auto;
+	}
+
+	.menu {
+		display: flex;
+		gap: 1.3rem;
+		font-weight: 600;
+		color: var(--muted);
+	}
+
+	.menu a:hover {
+		color: var(--primary);
+	}
+
+	.btn {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.72rem 1.1rem;
+		border-radius: 999px;
+		font-weight: 700;
+		font-size: 0.95rem;
+		transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+	}
+
+	.btn:hover {
+		transform: translateY(-2px);
+	}
+
+	.btn-primary {
+		background: linear-gradient(120deg, var(--accent), #ff6f1f);
+		color: #fff;
+		box-shadow: 0 12px 25px -18px rgba(205, 89, 22, 0.8);
+	}
+
+	.btn-light {
+		background: #fff;
+		border: 1px solid var(--border);
+	}
+
+	.btn-outline {
+		border: 1px solid var(--border);
+		background: #fff;
+	}
+
+	.hero {
+		padding-top: 4.5rem;
+	}
+
+	.hero-grid {
+		display: grid;
+		grid-template-columns: 1.1fr 0.9fr;
+		gap: 1.8rem;
+		align-items: stretch;
+	}
+
+	.eyebrow {
+		display: inline-flex;
+		padding: 0.35rem 0.75rem;
+		border-radius: 999px;
+		background: var(--accent-soft);
+		font-weight: 700;
+		font-size: 0.8rem;
+		letter-spacing: 0.04em;
+		text-transform: uppercase;
+		margin: 0 0 1rem;
+	}
+
+	h1 {
+		font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+		font-size: clamp(2rem, 5vw, 4rem);
+		line-height: 1.05;
+		letter-spacing: -0.025em;
+		margin: 0;
+		max-width: 13ch;
+	}
+
+	.hero-copy p {
+		margin: 1.1rem 0 0;
+		color: var(--muted);
+		max-width: 56ch;
+	}
+
+	.hero-actions {
+		display: flex;
+		gap: 0.75rem;
+		margin-top: 1.45rem;
+		flex-wrap: wrap;
+	}
+
+	.hero-panel {
+		padding: 1.45rem 1.45rem 1.3rem;
+		background:
+			linear-gradient(180deg, rgba(29, 109, 151, 0.06), rgba(255, 138, 48, 0.08)),
+			var(--surface);
+	}
+
+	.panel-title {
+		margin: 0;
+		font-size: 0.9rem;
+		font-weight: 800;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: var(--primary);
+	}
+
+	.hero-panel ul {
+		margin: 0.9rem 0 1rem;
+		padding-left: 1rem;
+		display: grid;
+		gap: 0.45rem;
+		color: var(--text);
+	}
+
+	.panel-link {
+		font-weight: 700;
+		color: var(--primary);
+	}
+
+	.service-grid {
+		margin-top: 2rem;
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1rem;
+	}
+
+	.service-card {
+		padding: 1.2rem;
+	}
+
+	.service-card h3 {
+		margin: 0;
+		font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+		font-size: 1.15rem;
+	}
+
+	.service-card p {
+		margin: 0.5rem 0 0;
+		color: var(--muted);
+	}
+
+	.service-highlight {
+		background: linear-gradient(140deg, #0f3d5a 0%, #1b5b80 100%);
+		color: #fff;
+		border: none;
+	}
+
+	.service-highlight p {
+		color: #d8e9f5;
+	}
+
+	.partners-wrap {
+		padding: 1.5rem;
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		align-items: center;
+		background: linear-gradient(145deg, #ffffff 0%, #edf5fb 100%);
+	}
+
+	.partner-list {
+		display: flex;
+		gap: 0.65rem;
+		flex-wrap: wrap;
+	}
+
+	.partner-list a {
+		padding: 0.55rem 0.9rem;
+		border-radius: 999px;
+		background: var(--surface-alt);
+		border: 1px solid var(--border);
+		font-weight: 700;
+	}
+
+	.contact-grid {
+		display: grid;
+		grid-template-columns: 1.1fr 0.9fr;
+		gap: 1rem;
+	}
+
+	.contact-line {
+		margin: 0.5rem 0;
+	}
+
+	.contact-line a {
+		color: var(--primary);
+		font-weight: 700;
+	}
+
+	.cta-card {
+		padding: 1.35rem;
+	}
+
+	.cta-card h3 {
+		margin: 0;
+		font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+		font-size: 1.3rem;
+	}
+
+	.cta-card p {
+		color: var(--muted);
+		margin-top: 0.4rem;
+	}
+
+	.footer {
+		border-top: 1px solid var(--border);
+		padding: 1.2rem 0 2rem;
+	}
+
+	.footer-inner {
+		display: flex;
+		justify-content: space-between;
+		gap: 1rem;
+		flex-wrap: wrap;
+		color: var(--muted);
+		font-size: 0.92rem;
+	}
+
+	@media (max-width: 960px) {
+		.menu {
+			display: none;
+		}
+
+		.hero-grid,
+		.contact-grid,
+		.service-grid {
+			grid-template-columns: 1fr;
+		}
+
+		h1 {
+			max-width: 100%;
+		}
+
+		.partners-wrap {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+
+	@media (max-width: 520px) {
+		.brand-logo {
+			height: 1.8rem;
+		}
+
+		.topbar-inner {
+			flex-wrap: wrap;
+		}
+
+		.btn-outline {
+			width: 100%;
+		}
+	}
+</style>
